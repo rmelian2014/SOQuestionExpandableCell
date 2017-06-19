@@ -12,6 +12,7 @@
 		FB5A64BF1EF76A5300790E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5A64BD1EF76A5300790E6F /* Main.storyboard */; };
 		FB5A64C11EF76A5300790E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5A64C01EF76A5300790E6F /* Assets.xcassets */; };
 		FB5A64C41EF76A5300790E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5A64C21EF76A5300790E6F /* LaunchScreen.storyboard */; };
+		FB5A64CC1EF76F2A00790E6F /* ExpandingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A64CB1EF76F2A00790E6F /* ExpandingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FB5A64C01EF76A5300790E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5A64C31EF76A5300790E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5A64C51EF76A5300790E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5A64CB1EF76F2A00790E6F /* ExpandingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FB5A64C01EF76A5300790E6F /* Assets.xcassets */,
 				FB5A64C21EF76A5300790E6F /* LaunchScreen.storyboard */,
 				FB5A64C51EF76A5300790E6F /* Info.plist */,
+				FB5A64CB1EF76F2A00790E6F /* ExpandingTableViewCell.swift */,
 			);
 			path = SOQuestionExpandableTableViewCell;
 			sourceTree = "<group>";
@@ -96,8 +99,8 @@
 				TargetAttributes = {
 					FB5A64B51EF76A5300790E6F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = XSDZKCRSXQ;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = FWYL5KC8D3;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -139,6 +142,7 @@
 			files = (
 				FB5A64BC1EF76A5300790E6F /* ViewController.swift in Sources */,
 				FB5A64BA1EF76A5300790E6F /* AppDelegate.swift in Sources */,
+				FB5A64CC1EF76F2A00790E6F /* ExpandingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +263,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XSDZKCRSXQ;
+				DEVELOPMENT_TEAM = FWYL5KC8D3;
 				INFOPLIST_FILE = SOQuestionExpandableTableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pruebas.SOQuestionExpandableTableViewCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c6899c4d-4e8a-483c-809a-4a59fc296041";
+				PROVISIONING_PROFILE_SPECIFIER = forTestingDevelopment;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,11 +278,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XSDZKCRSXQ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = FWYL5KC8D3;
 				INFOPLIST_FILE = SOQuestionExpandableTableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pruebas.SOQuestionExpandableTableViewCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "66e7537d-af00-4890-ad27-1514175ab9a6";
+				PROVISIONING_PROFILE_SPECIFIER = forTestDistributionAdHoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
